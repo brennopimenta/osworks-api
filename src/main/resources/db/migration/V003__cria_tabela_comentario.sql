@@ -1,6 +1,6 @@
 CREATE TABLE comentario
 (
-    id bigint NOT NULL,
+    id bigserial NOT NULL,
     ordem_servico_id bigint NOT NULL,
     descricao character varying(255),
     data_envio timestamp without time zone,

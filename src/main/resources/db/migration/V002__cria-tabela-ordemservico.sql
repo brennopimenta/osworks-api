@@ -1,6 +1,6 @@
 CREATE TABLE ordem_servico
 (
-    id bigint NOT NULL,
+    id bigserial NOT NULL,
     data_abertura timestamp without time zone,
     data_finalizacao timestamp without time zone,
     descricao character varying(255),

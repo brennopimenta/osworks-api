@@ -59,8 +59,7 @@ public class ClienteController {
         if (!clienteRepository.existsById(clienteId)) {
             return ResponseEntity.notFound().build();
         }
-        cliente.setId(clienteId);
-        cliente = clienteService.salvar(cliente);
+        clienteService.atualizar(clienteId, cliente);
         return ResponseEntity.ok(cliente);
     }
 

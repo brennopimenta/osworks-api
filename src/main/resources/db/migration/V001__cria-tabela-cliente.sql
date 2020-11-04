@@ -1,6 +1,6 @@
 CREATE TABLE cliente
 (
-    id bigint NOT NULL,
+    id bigserial NOT NULL,
     email character varying(255),
     nome character varying(255),
     fone character varying(255),
